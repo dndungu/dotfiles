@@ -1,0 +1,19 @@
+[user]
+	email = dndungu@zendesk.com
+	name = David Ndungu
+
+[push]
+	default = current
+
+[alias]
+	c = checkout
+	l = log --pretty=format:'%h %an %Cred%ar %d %Cgreen%s'
+	s = status -bs
+	a = commit -a --amend --no-edit
+	p = push
+
+[core]
+	excludesfile = ~/.gitignore
+
+[fetch]
+	prune = true
