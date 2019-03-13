@@ -1,0 +1,2 @@
+# dotfiles
+Preferred shell settings.
