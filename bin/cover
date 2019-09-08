@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -x
+
+_go_cover(){
+	local f="cover.$(date +%s).out"
+	go test -coverprofile=/tmp/${f}
+	go tool cover -html=${f}
+}
+
+_go_cover
