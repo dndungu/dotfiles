@@ -1,12 +1,12 @@
 [user]
-	email = dndungu@zendesk.com
 	name = David Ndungu
 
 [push]
 	default = current
 
 [alias]
-	c = checkout
+	c = commit
+	co = checkout
 	l = log --pretty=format:'%h %an %Cred%ar %d %Cgreen%s'
 	s = status -bs
 	a = commit -a --amend --no-edit

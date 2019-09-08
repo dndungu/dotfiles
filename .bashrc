@@ -1,2 +1,6 @@
-alias rebase="git checkout master && git fetch && git pull && git checkout - && git rebase master"
-alias branch="git checkout -b dndungu/$0"
+#!/bin/bash
+
+export GOBIN="${HOME}/go/bin"
+export GOCACHE="${HOME}/go/cache"
+export PATH=$GOBIN:$PATH
+export GO111MODULE=on
