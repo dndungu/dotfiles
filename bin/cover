@@ -2,10 +2,10 @@
 
 set -x
 
-_go_cover(){
-	local f="cover.$(date +%s).out"
-	go test -coverprofile=/tmp/${f}
+_go_test_cover(){
+	local f="/tmp/cover.$(date +%s).out"
+	go test -coverprofile=${f}
 	go tool cover -html=${f}
 }
 
-_go_cover
+_go_test_cover
