@@ -26,3 +26,11 @@ set smartindent
 
 autocmd! BufEnter,BufNewFile *.go syntax on
 autocmd! BufLeave *.go syntax off
+
+" YAML
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" Subtle 80+ column indicator
+highlight OverLength ctermbg=black ctermfg=darkgrey
+match OverLength /\%81v.\+/
