@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x
-
 _go_test_cover(){
 	local f="/tmp/cover.$(date +%s).out"
 	go test -coverprofile=${f}
