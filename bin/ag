@@ -1,0 +1,7 @@
+#!/bin/bash
+
+input(){
+	grep -nre 'Input struct' "${GEN_ROOT}/${1}" | awk '{print $2}'
+}
+
+$*
