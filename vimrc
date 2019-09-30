@@ -12,6 +12,7 @@ set noswapfile
 
 set mouse=a
 set ttymouse=sgr
+set clipboard=unnamed
 
 set updatetime=1000
 set balloondelay=500
@@ -19,6 +20,9 @@ set balloondelay=500
 set signcolumn=auto
 
 set backspace=2
+
+map <space> viw
+map r :GOVIMRename<CR>
 
 filetype plugin indent on
 set autoindent
@@ -33,4 +37,4 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Subtle 80+ column indicator
 highlight OverLength ctermbg=black ctermfg=darkgrey
-match OverLength /\%81v.\+/
+match OverLength /\%121v.\+/

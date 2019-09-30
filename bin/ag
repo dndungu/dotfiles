@@ -1,0 +1,16 @@
+#!/bin/bash
+
+input(){
+	grep -nre 'Input struct' "${GEN_ROOT}/${1}" | awk '{print $2}'
+}
+
+srv(){
+	ls -1 "$GEN_ROOT"
+}
+
+func(){
+	grep -rE '^func.*Client.*Request.*Input' "${GEN_ROOT}/${1}" | awk 'split($4,f,"("){print f[1]}'
+}
+
+$*
+.
