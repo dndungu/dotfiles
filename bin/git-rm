@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+rollback() {
+  git co -f
+  for i in $(git status -bs)
+  do
+    rm -rf "$i"
+  done
+  git co -f
+}
+
+rollback

@@ -1,9 +1,3 @@
-[user]
-	name = David Ndungu
-
-[push]
-	default = current
-
 [alias]
 	c = commit
 	co = checkout
@@ -11,9 +5,50 @@
 	s = status -bs
 	a = commit -a --amend --no-edit
 	p = push
+    set-upstream = \
+       !git branch \
+				--set-upstream-to=origin/`git symbolic-ref --short HEAD`
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/dndungu/.gitignore
 
 [fetch]
 	prune = true
+
+[init]
+	defaultBranch = main
+
+[push]
+	default = current
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[rebase]
+	autosquash = true
+
+[user]
+	name = David Ndungu
+	email = dndungu@zendesk.com
+
+[pull]
+	ff = only
+
+[url "ssh://git@github.com"]
+	insteadOf = https://github.com
+
+
+# [url "git@github.com:"]
+# 	insteadOf = https://github.com/
+
+#[url "https://github.com"]
+#	insteadOf = "ssh://git@github.com"
+
+#[url "https://giturl@github.com"]
+#	insteadOf = git://
+
+#[url "ssh://git@github.com/zendesk/"]
+#	insteadOf = https://github.com/zendesk/
+[advice]
+	skippedCherryPicks = false
