@@ -38,17 +38,5 @@
 [url "ssh://git@github.com"]
 	insteadOf = https://github.com
 
-
-# [url "git@github.com:"]
-# 	insteadOf = https://github.com/
-
-#[url "https://github.com"]
-#	insteadOf = "ssh://git@github.com"
-
-#[url "https://giturl@github.com"]
-#	insteadOf = git://
-
-#[url "ssh://git@github.com/zendesk/"]
-#	insteadOf = https://github.com/zendesk/
 [advice]
 	skippedCherryPicks = false
